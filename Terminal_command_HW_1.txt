@@ -1,0 +1,107 @@
+#1. Посмотреть где я --- pwd
+
+#2. Создать папку --- mkdir group__27
+
+#3. Зайти в папку --- cd group__27
+
+#4. Создать 3 папки --- mkdir folder_1 folder_2 folder_3
+
+#5. Зайти в любоую папку --- cd folder_1
+
+#6. Создать 5 файлов (3 txt, 2 json) --- touch lesson__1.txt lesson__2.txt lesson__3.txt lesson__4.json lesson__5.json
+
+#7. Создать 3 папки --- mkdir f__1 f__2 f__3
+
+#8. Вывести список содержимого папки --- ls -la
+
+#9. + Открыть любой txt файл --- vim lesson__1.txt
+ 
+#10. + написать туда что-нибудь, любой текст --- i +  Hi, this is my first lesson on git bash on Vadim Ksenzov course.
+                                                    I will study for 3 months on these courses
+                                                    Before that, I worked as a sailor in a German company
+                                                    now I'm learning a profession QA
+                                                    all bye
+
+#11. + сохранить и выйти --- Esc + :wq
+
+#12. Выйти из папки на уровень выше --- cd ..
+
+#13. Переместить любые 2 файла, которые вы создали, в любую другую папку --- mv group__27/mv folder_1/{lesson__1.txt,lesson__3.txt}  group__27/folder_2/{lesson__1.txt,lesson__3.txt}
+
+
+#14. Cкопировать любые 2 файла, которые вы создали, в любую другую папку --- cp  group__27/folder_1/{lesson__4.json,lesson__5.json} group__27/folder_2/{lesson__4.json,lesson__5.json}
+
+ 
+#15. Найти файл по имени --- (В папке group_27 запрос): find older_3
+ 
+
+#16. Просмотреть содержимое в реальном времени (команда grep) изучите как как она работает. --- /c/group__27/folder_1   $ grep 'German' lesson__1.txt
+{Before that, I worked as a sailor in a German company}
+
+
+#17. Вывести несколько первых строк из текстового файла --- head -2 /c/group__27/folder_1/lesson__1.txt
+ {Hi, this is my first lesson on git bash on Vadim Ksenzov course.
+ I will study for 3 months on these courses}
+
+
+
+#18. Вывести несколько последних строк из текстового файла ---  tail -2 /c/group__27/folder_1/lesson__1.txt 
+{"now I'm learning a profession
+ all bye}
+
+
+#19. Просмотреть содержимое длинного файла (команда less) изучите как она работает. --- less /c/group__27/folder_1/lesson__1.txt
+{ALL TEXT}
+
+#20. Вывести дату и время --- date  
+{Thu Feb 10 14:22:38 RTZ 2022}
+=======================================================
+
+Задание №2* 
+
+Отправить http запрос на сервер.--- $  curl http://162.55.220.72:5005/terminal-hw-request
+
+{ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   237  100   237    0     0    679      0 --:--:-- --:--:-- --:--:--   681
+{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+$ curl "http://162.55.220.72:5005/get_method?name=Artem&age=22"
+
+  {% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    15  100    15    0     0     46      0 --:--:-- --:--:-- --:--:--    46["Artem","22"]}
+
+========================================================
+
+Задание №3* 
+
+Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+
+pomer@DESKTOP-82MOLAH MINGW64 /c/skript
+$ nano myscript1.sh
+
+pomer@DESKTOP-82MOLAH MINGW64 /c/skript
+$ ls -l
+total 1
+-rwxr-xr-x 1 pomer 197610 148 Feb 11 16:45 myscript1.sh*
+
+pomer@DESKTOP-82MOLAH MINGW64 /c/skript
+$ chmod +x ./myscript1.sh
+
+pomer@DESKTOP-82MOLAH MINGW64 /c/skript
+$ ./myscript1.sh
+./myscript1.sh: line 3: cd: skript: No such file or directory
+total 4
+drwxr-xr-x 1 pomer 197610 0 Feb 11 16:49 .
+drwxr-xr-x 1 pomer 197610 0 Feb 11 16:49 ..
+-rw-r--r-- 1 pomer 197610 0 Feb 11 16:49 art1.txt
+-rw-r--r-- 1 pomer 197610 0 Feb 11 16:49 art2.txt
+-rw-r--r-- 1 pomer 197610 0 Feb 11 16:49 art3.txt
+-rw-r--r-- 1 pomer 197610 0 Feb 11 16:49 art4.json
+-rw-r--r-- 1 pomer 197610 0 Feb 11 16:49 art5.json
+drwxr-xr-x 1 pomer 197610 0 Feb 11 16:49 f..2
+drwxr-xr-x 1 pomer 197610 0 Feb 11 16:49 f..3
+drwxr-xr-x 1 pomer 197610 0 Feb 11 16:49 f..4
+
