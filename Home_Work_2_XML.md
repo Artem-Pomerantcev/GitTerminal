@@ -53,11 +53,11 @@
  <?xml version="1.0" encoding="windows-1250"?>
    <book category="WEB">
       <title lang="en">Learning XML</title>
-      <fav_movie>"Termina"l</fav_movie>
-      <fav_series>"Viking"</fav_series>
-      <fav_food>"Pizza"</fav_food>
-      <fav_season>"Summer"</fav_season>
-      <country>"Spain"</country>
+      <fav_movie>Terminal</fav_movie>
+      <fav_series>Viking</fav_series>
+      <fav_food>Pizza</fav_food>
+      <fav_season>Summer</fav_season>
+      <country>Spain</country>
    </book>
 ```
 
@@ -69,10 +69,10 @@
 <?xml version="1.0" encoding="windows-1250"?>
    <book category="WEB">
       <title lang="en">Learning XML</title>
-      <terminal>"Terminal"</terminal>
-      <git_hub>"Git Hub"</git_hub>
-      <postman>"Postman"</postman>
-     <sql>"SQL"</sql>
+      <terminal>Terminal</terminal>
+      <git_hub>Git Hub</git_hub>
+      <postman>Postman</postman>
+     <sql>SQL</sql>
    </book>
 ```
 
