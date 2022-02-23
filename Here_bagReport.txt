@@ -1,0 +1,9 @@
+summary: Срезан левый край иконки «Книга» на игровой панели слева
+
+Project: Game "Viking"
+
+Severity: Critical
+
+Priority: Medium
+
+status: in progress
